@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="wrapper">
+    <div class="wrapper">
+    	<div class="container">
+      <h1 class="hidden" id="warning"></h1>
+
+    		<h1>Welcome to the robot factory</h1>
+    		<form class="form" method="post" onsubmit="return submitform(this)">
+      		<input type="text" placeholder="Username" name="username" id="username"/>
+    			<input type="password" placeholder="Password" name="password" id="password" />
+    			<input type="submit" id="login-button" name="login-button" value="Login" />
+    		</form>
+    	</div>
+
+    	<ul class="bg-bubbles">
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	</ul>
+
+    </div>
+    <script type="text/javascript">
+      admin_username = "admin"
+      admin_password = "S3cUr3P4sSw0rd123456"
+    </script>
+    <script type="text/javascript">
+      function submitform(e) {
+        y = e
+        console.log(e.password.value)
+        if (e.username.value === admin_username && e.password.value === admin_password) {
+          window.location.href = "9872c8ed92565b3e420acbcf5a206689.txt";
+        }
+        document.getElementById("warning").innerHTML = "Wrong password/username"
+        return false
+      }
+    </script>
+  </body>
+</html>
